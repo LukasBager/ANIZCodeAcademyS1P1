@@ -36,7 +36,7 @@ public class Tomato {
 
     @Override
     public String toString() {
-        return "This tomato has a(n) " + color + " color and weighs " + weight + " grams.";
+        return "Tomato [color=" + color + ", weight=" + weight + "g]";
     }
 
 }
