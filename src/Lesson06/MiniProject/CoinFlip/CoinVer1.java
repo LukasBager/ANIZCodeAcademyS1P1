@@ -29,7 +29,7 @@ public class CoinVer1 {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // Kører hver gang man forsøger at printe/kalde objektet direkte, da Java leder efter denne metode kaldet "toString()"
         return "Coin shows: " + side;
     }
 }

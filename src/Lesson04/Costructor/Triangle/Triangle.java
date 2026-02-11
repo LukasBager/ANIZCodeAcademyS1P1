@@ -32,5 +32,30 @@ public class Triangle {
                 ", sideC = " + sideC);
         System.out.println("Perimeter = " + getPerimeter());
         System.out.println("Area = " + getArea());
+        System.out.println("Is equilateral: " + this.isEquilateral());
+        System.out.println("Is isosceles: " + this.isIsosceles());
     }
+
+    public boolean isEquilateral() {
+        if (sideA == sideB && sideB == sideC) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isIsosceles() {
+        if (sideA == sideB || sideB == sideC || sideA == sideC) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void scaleTriangle(double factor) {
+        sideA *= factor;
+        sideB *= factor;
+        sideC *= factor;
+    }
+
 }

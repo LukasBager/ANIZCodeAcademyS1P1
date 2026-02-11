@@ -5,7 +5,7 @@ package Lesson04.Conditionals;
 public class TivoliRideTest {
     public static void main(String[] args) {
 
-        TivoliRide ride = new TivoliRide(140); // minimumshøjde 140 cm
+        TivoliRide ride = new TivoliRide(140, "Loopmaster 3000"); // minimumshøjde 140 cm
         check(ride);
     }
 

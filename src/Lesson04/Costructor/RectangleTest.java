@@ -3,21 +3,22 @@ package Lesson04.Costructor;
 import java.util.Scanner;
 
 public class RectangleTest {
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter length of the rectangle: ");
-        double length = input.nextDouble();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter width of the rectangle: ");
-        double width = input.nextDouble();
+        System.out.println("What is the length of the triangle?");
+        double length = scanner.nextDouble();
 
-        // Create Rectangle object
-        Rectangle rect = new Rectangle(length, width);
+        System.out.println("What is the width of the triangle?");
+        double width = scanner.nextDouble();
 
-        // Show info
-        rect.showInfo();
+        Rectangle r1 = new Rectangle(length, width);
+        r1.showInfo();
 
-        input.close();
+        scanner.close();
+
     }
+
 }

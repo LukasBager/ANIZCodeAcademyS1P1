@@ -1,30 +1,32 @@
 package Lesson04.Costructor;
 
 public class Rectangle {
-    // attributes (fields)
-    double length;
-    double width;
 
-    // constructor
-    public Rectangle(double minlength, double minwidth) {
-        this.length = minlength;
-        this.width = minwidth;
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
 
-    // method: calculate perimeter (omkreds)
     public double getPerimeter() {
-        return 2 * (length + width);
+        double perimeter = length * 2 + width * 2;
+        return perimeter;
     }
 
-    // method: calculate area (areal)
     public double getArea() {
-        return length * width;
+        double area = length * width;
+        return area;
     }
 
-    // method: show info
     public void showInfo() {
-        System.out.println("Rectangle: length = " + length + ", width = " + width);
-        System.out.println("Perimeter = " + getPerimeter());
-        System.out.println("Area = " + getArea());
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Perimeter: " + this.getPerimeter());
+        System.out.println("Area: " + this.getArea());
     }
+
+
+
 }

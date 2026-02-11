@@ -8,12 +8,21 @@ public class PersonTest {
         String mName = "Elias";
         String lName = "Mogensen";
         int age = 47;
+        String sex = "Mand";
 
-        OpretNytPersonObjekt(fName, mName, lName, age);
+        OpretNytPersonObjekt(fName, mName, lName, age, sex);
+
+        fName = "Lukas";
+        mName = "Emil";
+        lName = "Bager";
+        age = 22;
+        sex = "Mand";
+
+        OpretNytPersonObjekt(fName, mName, lName, age, sex);
 
     }
 
-    public static void OpretNytPersonObjekt(String fName, String mName, String lName, int age)
+    public static void OpretNytPersonObjekt(String fName, String mName, String lName, int age, String sex)
     {
 
         // Opretter et nyt Person-objekt
@@ -24,6 +33,7 @@ public class PersonTest {
         p.middleName = mName;
         p.lastName = lName;
         p.age = age;
+        p.gender = sex;
 
         //Udskriv
         p.WritePersonInfo();

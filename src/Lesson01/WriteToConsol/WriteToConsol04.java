@@ -1,6 +1,6 @@
 package Lesson01.WriteToConsol;
 
-
+//I think this solution is ok for me.
 public class WriteToConsol04 {
     public static void main(String[] args) {
 

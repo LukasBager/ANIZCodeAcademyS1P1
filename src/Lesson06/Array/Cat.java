@@ -20,4 +20,3 @@ public class Cat {
         System.out.println(name + " is sleeping 💤");
     }
 }
-
