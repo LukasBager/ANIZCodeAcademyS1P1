@@ -9,10 +9,10 @@ public class BottleSong {
 
     public void sing() {
         while (bottles > 0) {
-            System.out.println(bottles + " bottles of soda on the wall, " + bottles + " bottles of soda!");
+            System.out.println(bottles + " bottles of beer on the wall, " + bottles + " bottles of beer!");
             bottles--;
-            System.out.println("Take one down, pass it around, " + bottles + " bottles of soda on the wall.\n");
+            System.out.println("Take one down, pass it around, " + bottles + " bottles of beer on the wall.\n");
         }
-        System.out.println("No more bottles of soda on the wall! 🍾");
+        System.out.println("No more bottles of beer on the wall! 🍾");
     }
 }
