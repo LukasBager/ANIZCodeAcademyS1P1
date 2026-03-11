@@ -4,10 +4,12 @@ package Lesson14.ArrayListOgEnum;
 public class Elev {
     private String navn;
     private Hus hus;
+    private Fag favoritFag;
 
-    public Elev(String navn, Hus hus) {
+    public Elev(String navn, Hus hus, Fag favoritFag) {
         this.navn = navn;
         this.hus = hus;
+        this.favoritFag = favoritFag;
     }
 
     public String getNavn() {
@@ -16,6 +18,10 @@ public class Elev {
 
     public Hus getHus() {
         return hus;
+    }
+
+    public Fag getFavoritFag() {
+        return favoritFag;
     }
 
     @Override

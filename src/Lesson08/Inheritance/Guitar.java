@@ -5,15 +5,15 @@ package Lesson08.Inheritance;
 class Guitar extends Instrument {
     private int strings;
 
-    public Guitar(String name, int strings) {
-        super(name, "Strenge");
+    public Guitar(String name, int strings, String brand) {
+        super(name, "Strenge", brand);
         this.strings = strings;
     }
 
 
     @Override
     public String toString() {
-        return "Guitar: " + name + ", strings: " + strings;
+        return "Guitar: " + name + ", strings: " + strings + ", brand: " + brand;
     }
 
     public void strum() {

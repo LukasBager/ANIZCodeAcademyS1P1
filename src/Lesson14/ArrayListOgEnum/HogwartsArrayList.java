@@ -9,11 +9,11 @@ public class HogwartsArrayList {
         ArrayList<Elev> elever = new ArrayList<>();
 
         // Tilføj elever
-        elever.add(new Elev("Harry", Hus.GRYFFINDOR));
-        elever.add(new Elev("Hermione", Hus.GRYFFINDOR));
-        elever.add(new Elev("Draco", Hus.SLYTHERIN));
-        elever.add(new Elev("Luna", Hus.RAVENCLAW));
-        elever.add(new Elev("Cedric", Hus.HUFFLEPUFF));
+        elever.add(new Elev("Harry", Hus.GRYFFINDOR, Fag.FORSVAR_MOD_MØRKE_KUNSTER));
+        elever.add(new Elev("Hermione", Hus.GRYFFINDOR, Fag.FORTRYLLELSER));
+        elever.add(new Elev("Draco", Hus.SLYTHERIN, Fag.FORSVAR_MOD_MØRKE_KUNSTER));
+        elever.add(new Elev("Luna", Hus.RAVENCLAW, Fag.ASTROLOGI));
+        elever.add(new Elev("Cedric", Hus.HUFFLEPUFF, Fag.ELIXIR));
 
         // Udskriv alle elever
         System.out.println("Elever på Hogwarts:");
@@ -28,5 +28,13 @@ public class HogwartsArrayList {
                 System.out.println(e.getNavn());
             }
         }
+        System.out.println("\nElever hvis yndlingsfag er Forsvar mod Mørke Kunster:");
+        for (Elev e : elever) {
+            if (e.getFavoritFag() == Fag.FORSVAR_MOD_MØRKE_KUNSTER) {
+                System.out.println(e.getNavn());
+            }
+        }
+
     }
+
 }

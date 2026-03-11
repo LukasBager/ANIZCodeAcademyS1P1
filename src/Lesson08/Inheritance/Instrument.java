@@ -5,10 +5,12 @@ package Lesson08.Inheritance;
 class Instrument {
     protected String name;
     protected String type; // fx Strenge, Blæs, Slag
+    protected String brand;
 
-    public Instrument(String name, String type) {
+    public Instrument(String name, String type, String brand) {
         this.name = name;
         this.type = type;
+        this.brand = brand;
     }
 
 
