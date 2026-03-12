@@ -23,7 +23,7 @@ Her konverteres tekst fra filen til et heltal.
 Dette er nødvendigt fordi data fra filer altid læses som tekst.
 ________________________________________
 5
-Denne konstruktion bruges til at læse filen linje for linje, indtil filen er slut.
+//Denne konstruktion bruges til at læse filen linje for linje, indtil filen er slut.
 ________________________________________
 6
 Her bruges en enum til at konvertere tekst til en foruddefineret værdi.

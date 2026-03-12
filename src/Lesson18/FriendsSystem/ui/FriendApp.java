@@ -4,11 +4,14 @@ package Lesson18.FriendsSystem.ui;
 import Lesson18.FriendsSystem.model.*;
 import Lesson18.FriendsSystem.service.FriendFileHandler;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FriendApp {
+
+
 
     private static ArrayList<Friend> friends = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
@@ -152,13 +155,13 @@ public class FriendApp {
 
     }
 
-    public static void saveFriends() {
+    public static void saveFriends() throws IOException {
 
         fileHandler.saveFriends(friends, "friends.csv");
 
     }
 
-    public static void exitProgram() {
+    public static void exitProgram() throws IOException {
 
         saveFriends();
 

@@ -10,7 +10,10 @@ import java.util.ArrayList;
 
 public class FriendFileHandler {
 
-    public void saveFriends(ArrayList<Friend> friends, String fileName) {
+    public void saveFriends(ArrayList<Friend> friends, String fileName)  {
+
+
+
 
         if (friends == null) {
             throw new IllegalArgumentException("Friend list cannot be null.");
